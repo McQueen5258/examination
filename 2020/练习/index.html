@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello0</title>
+</head>
+<body style="display: flex; flex-direction: column;align-items: center;" onkeyup="console.log(event.key)"1>
+    <p>你好！hello world</p>
+    <a href="#bottom">
+        <img src="./20200907215117.png" alt="" style="width: 100px;">
+    </a>
+    <a name="#name">百度</a>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>0</td>
+            <td>#</td>
+        </tr>
+    </table>
+<h1>gdcf</h1>
+    <video controls="controls" width="420" style="margin-top: 15px" id="videoPlayer">
+    <source src="./The conductor.mp4"type="video/mp4"/>
+    浏览器不支持HTML5:video
+    </video>
+
+    <button onclick="playPause()">
+        播放/暂停
+    </button>
+    <form action="https://www.bing.com/search" method="get">
+        <input name="q" type="text">
+        <input type="submit" value="搜索">
+
+    </form>
+
+    <p>1：</p><input type="text">
+    <p>2:</p><input type="text">
+    <p>日期</p><input type="Date">
+    <p>手机</p><input type="Phone">
+    <input type="range" min="0" max="100" step="5"/>
+
+
+	<div>gender
+		<label><input type="radio" name="sex" value="男生">男生</label>
+		<label><input type="radio" name="sex" value="女生">女生</label>
+	</div>
+	<div>
+		race
+		<label><input type="checkbox" name="like" value="0">音乐</label>
+		<label><input type="checkbox" name="like" value="1">旅游</label>
+
+<style>
+    circle:hover {
+        opacity: 0.5;
+        fill: blue;
+    }
+    rect:active {
+        fill: rgb(0, 0, 0);
+        opacity: 0.5;
+    }
+</style>
+        <svg width="400" height="400" opcity="0.5">
+            <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4"fill="yellow" opcity="0.5" ></circle>
+            <rect onclick="s" x="50" y="20" rx="20" ry="20" width="150" height="150"  opcity="0.5"></rect>
+        </svg>
+        <button id="c" onclick="console.log('点了')"></button>
+        <button name="bottom">hhh</button>
+        <a name="bottom"></a>
+
+        <h1>HTML5 是下一代的 HTML。
+
+            什么是 HTML5？
+            HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。
+            HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
+            HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支</h1>
+</body>
+<script>
+    document.addEventListener('keyup',a);
+    function a(e) {
+        console.log(e.keyCode);
+    }
+
+    var v=document.getElementById("videoPlayer");
+  function playPause()
+  {
+    if (v.paused)
+      v.play();
+    else
+      v.pause();
+  }
+
+</script>
+</html>
