@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body style="height: 100vh; width: 100vw;">
+    <!-- 亮/暗模式图标 -->
+    <div class="LDButton"></div>
+
+    <!-- 表单 -->
+    <form action="" class="form">
+        标题:<br>
+        <input type="text" name="标题" class="biaoTi input">
+        <br>
+        姓名:<br>
+        <input type="text" name="name" class="name">
+        <br>
+        电话:<br>
+        <input type="tel" name="phone" class="phone" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11>
+        <br>
+        留言区域:<br>
+        <textarea rows="3" cols="20" class="liuYan"></textarea>
+        <br><br>
+
+        <!-- <input type="submit" value="Submit"> -->
+        <input type="button" id="btn" value="提交">
+        <input type="reset" value="删除" />
+    </form>
+
+
+    <div id="choiceWindow">
+        <form>
+            <h1>确认</h1><br>
+            <h2 class="showTime"></h2>
+            <span>标题: </span><span class="biaoti"></span><br>
+            <span>姓名: </span><span class="xingming"></span><br>
+            <span>电话: </span><span class="dianhua"></span><br>
+            <span>留言区域: </span><br>
+            <span class="liuyan"></span><br>
+            <!-- <label id="x" style="position: absolute;top:2px;left: 95%;font-size: 25px;">再想想</label> -->
+            <input type="button" value="再想想" id="zaiXiangXiang">
+            <input type="button" id="btn2" value="确定">
+
+            <!-- <input type="submit"> -->
+        </form>
+
+    <div>
+        
+</div>
+<div id="choiceWindow2">
+    <form>
+        <h1>感谢您对学堂的支持。我们将及时和您联系</h1>
+        <input type="submit">
+    </form>
+
+<div>
+</body>
+<script src="./asset/JS/jquery-1-edb203c114.10.2.js"></script>
+<script src="./asset/JS/script.js"></script>
+</html>
