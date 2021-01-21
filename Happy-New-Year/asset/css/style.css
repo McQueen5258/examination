@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#Happy-New-Year-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 70px;
+    font-weight: bold;
+    color: red;
+}
+
+.icon {
+    height: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Happy-New-Year {
+height: 20px;
+width: 20px;
+
+transform-style: preserve-3d;
+
+}
+/* 
+.love1 {
+    transform: rotateX(0deg) translateY(-100px);
+    
+} */
+
+.love1 {
+    transform: translate(-100px, -200px);
+    /* transform: rotateY(0deg) translateZ(140px) rotate3d(-1, 0.5, 0, 45deg); */
+    /* transform: translateZ(140px); */
+  }
+
+  /* petal 2 */
+  .love2 {
+    transform: translate(50px, -130px) rotateZ(45deg);;
+    /* transform: translateZ(-140px); */
+  }
+
+  /* petal 3 */
+  .love3 {
+    transform: translate(-270px, -130px) rotateZ(-45deg);
+  }
+
+  /* petal 4 */
+  .love4 {
+    transform: translate(-325px, -8px) rotateZ(-90deg);  }
+
+  /* petal 5 */
+  .love5 {
+    transform: translate(-274px, 127px) rotateZ(-135deg);
+  }
+
+  /* petal 6 */
+  .love6 {
+    transform: translate(-100px, 200px) rotateZ(180deg);
+  }
+  .love7 {
+    transform: translate(45px, 130px) rotateZ(135deg);
+  }
+  .love8 {
+    transform: translate(100px, 0px) rotateZ(90deg);
+  }
+
+  @keyframes rotate {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+  }
+  @keyframes colorNamecolor {
+    from {fill:rgb(255, 0, 0)}
+    to {fill:rgb(0, 0, 255);}
+  }
+  .Happy-New-Year {
+    animation-name: rotate;
+    animation:rotate 10s infinite linear; 
+  }
+  /* .icon > path{
+    animation-name: colorName;
+    animation:colorName 10s infinite linear; 
+  } */
